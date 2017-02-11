@@ -1,7 +1,8 @@
-#include <stdio.h>
+#include <iostream>         // std::cout を使うのに必要
+#include <boost/format.hpp> // boost::format を使うのに必要
 
-int main(int argc, char *args[])
+int main()
 {
-  printf("Hello, world!\n");
+  std::cout << boost::format("%s\n") % "Hello, World";
   return 0;
 }
